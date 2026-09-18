@@ -9,6 +9,7 @@ The `suricata-check-action` is a reusable GitHub Action that runs `suricata-chec
 ## Basic Setup
 
 This example includes:
+
 - `suricata.rules`: A sample ruleset to check.
 - `suricata-check.ini`: A configuration file for `suricata-check`.
 
@@ -33,6 +34,6 @@ jobs:
   suricata-check:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     - uses: Koen1999/suricata-check-action@v1.0
 ```
